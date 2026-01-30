@@ -1,0 +1,35 @@
+.toggle-container {
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  background: #ffd54f;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.toggle-container.dark {
+  background: #1e2a5a;
+}
+
+.toggle-circle {
+  width: 34px;
+  height: 34px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: 0.4s;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+/* Slide animation */
+.toggle-container.dark .toggle-circle {
+  transform: translateX(40px);
+}
